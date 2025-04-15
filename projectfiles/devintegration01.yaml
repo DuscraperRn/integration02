@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: devintegration01
+  name: devintegration01
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: devintegration01
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: devintegration01
+    spec:
+      containers:
+      - image: duscraperrn/real:27
+        name: real
+        ports:
+        - name: makemeonline
+          containerPort: 8080
+        resources: {}
+status: {}
