@@ -18,7 +18,7 @@ spec:
         app: devintegration01
     spec:
       containers:
-      - image: duscraperrn/real:15
+      - image: duscraperrn/real:2
         name: real
         ports:
         - name: makemeonline
